@@ -33,5 +33,6 @@ Route::get('/getConnection', [ConnectionController::class, 'index'])->name('getC
 Route::get('/getConnectionByID/{id}', [ConnectionController::class, 'show'])->name('getConnectionByID');
 Route::delete('/deleteConnection/{id}', [ConnectionController::class, 'destroy'])->name('deleteConnection');
 
+
 Route::get('/getSuggestion', [SuggestionController::class, 'index'])->name('getSuggestion');
 Route::put('/connect/{id}', [SuggestionController::class, 'edit'])->name('connect');
